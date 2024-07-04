@@ -1,4 +1,4 @@
-package com.kuro.hr_webapp;
+package com.kuro.hrwebapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
