@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<!--<html xmlns="http://www.w3.org/1999/xhml" xmlns:th="http://www.thymeleaf.org">-->
-<html lang="en">
+<html lang="fr">
 
 <head>
 	<meta charset="UTF-8">
 	<title>HR Web Application</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+	<style>
+		.special {
+			padding-top: 50px;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -36,10 +45,10 @@
 						<td><span th:text="${employee.firstName}"> Prénom </span></td>
 						<td><span th:text="${employee.lastName}"> Nom </span></td>
 						<td>
-							<a th:href="@{/updateEmployee/{id}(id=${employee.id})}"><button
-									class="btn btn-info">Modifier</button></a>
-							<a th:href="@{/deleteEmployee/{id}(id=${employee.id})}"><button
-									class="btn btn-danger">Supprimer</button></a>
+							<a th:href="@{/updateEmployee/{id}(id=${employee.id})}">
+								<button class="btn btn-info">Modifier</button></a>
+							<a th:href="@{/deleteEmployee/{id}(id=${employee.id})}">
+								<button class="btn btn-danger">Supprimer</button></a>
 						</td>
 					</tr>
 				</tbody>

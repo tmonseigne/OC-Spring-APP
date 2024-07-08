@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>HR Web Application</title>
+	<title>Title</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -26,18 +25,7 @@
 	</nav>
 
 	<div class="container special">
-
-		<h2 class="h2">Ajout d'un nouvel employée</h2>
-		<div>
-			<form method="post" th:action="@{/saveEmployee}" th:object="${employee}">
-				<input type="text" th:field="*{firstName}">
-				<input type="text" th:field="*{lastName}">
-				<input type="text" th:field="*{mail}">
-				<input type="password" th:field="*{password}">
-				<button type="submit" c>Créer</button>
-			</form>
-		</div>
-
+		<h2 class="h2">Modification d'un employée</h2>
 	</div>
 </body>
 
