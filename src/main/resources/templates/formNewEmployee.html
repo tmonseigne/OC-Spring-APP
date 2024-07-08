@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HR Web Application</title>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href=".">Système de gestion des
+					employées</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container special">
+
+		<h2 class="h2">Ajout d'un nouvel employée</h2>
+		<div>
+			<form method="post" th:action="@{/saveEmployee}" th:object="${employee}">
+				<input type="text" th:field="*{firstName}">
+				<input type="text" th:field="*{lastName}">
+				<input type="text" th:field="*{mail}">
+				<input type="password" th:field="*{password}">
+				<button type="submit" c>Créer</button>
+			</form>
+		</div>
+
+	</div>
+</body>
+
+</html>

@@ -20,7 +20,8 @@ public class HrWebAppApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println(properties.getApiUrl());
+		System.out.println("API URL : " + properties.getApiUrl());
+		System.out.println("Site URL : http://localhost:9001");
 	}
 
 }
